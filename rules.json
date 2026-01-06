@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://old.reddit.com\\1"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://(?:www\\.)?reddit\\.com(.*)",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://old.reddit.com\\1"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://new\\.reddit\\.com(.*)",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://old.reddit.com\\1"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://m\\.reddit\\.com(.*)",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://old.reddit.com\\1"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://i\\.reddit\\.com(.*)",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://old.reddit.com\\1"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://np\\.reddit\\.com(.*)",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  }
+]

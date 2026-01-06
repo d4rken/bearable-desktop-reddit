@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Old Reddit Redirect",
+  "version": "1.0.0",
+  "description": "Automatically redirects reddit.com to old.reddit.com",
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "*://*.reddit.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "redirect_rules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
